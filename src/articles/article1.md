@@ -2,7 +2,7 @@
 
 ## Article Title
 | Date        | Authors: John Doe    | <Contact@example.com>       |
-| :---        |    :----:   |          ---: |
+___
 
 ### Chapter 1: The Beginning
 
