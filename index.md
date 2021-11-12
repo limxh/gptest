@@ -6,7 +6,7 @@ This is an example website of our publishing platform. Here users can upload the
 ## Popular Articles
 
 1. [Article1](src/articles/article1.md)
-2. [Article2](src/articles/article1.md)
+2. [Article2](src/articles/article2.md)
 
 ___
 | [About Us](index.md)        | [Help Us Improve](index.md)    | <Contact@example.com>       |
