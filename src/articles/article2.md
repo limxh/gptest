@@ -144,7 +144,7 @@ To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in
 
 | Markdown | Rendered output |
 | ----------- | ----------- |
-| \- First <br> \- Second <br> \- Third <br> \- Fourth |  <ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul> |
+| \- First <br> \- Second <br> \- Third <br> \- Fourth |  <html><ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul></html> |
 | \* First <br> \* Second <br> \* Third <br> \* Fourth |  <ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul> |
 | \+ First <br> \+ Second <br> \+ Third <br> \+ Fourth |  <ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul> |
 | \- First <br> \- Second <br> \- Third <br> &emsp; \- Indented item <br> &emsp; \- Indented item <br> \- Fourth |  <ul><li>First item</li><li>Second item</li><li>Third item<ul><li>Indented item</li><li>Indented item</li></ul></li><li>Fourth item</li></ul> |
@@ -205,7 +205,7 @@ The rendered output:
 
 * This is how you add images
 
-    ![logo](/src/images/images.jfif)
+    ![logo](../images/images.jfif)
 
 
 ## Code
@@ -293,24 +293,24 @@ The rendered output:
 To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
 
 ````
-![logo](/src/images/images.jfif)
+![logo](../images/images.jfif)
 ````
 
 The rendered output:
 
-![logo](/src/images/images.jfif)
+![logo](../images/images.jfif)
 
 ## Linking images
 
 To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
 
 ````
-[![logo](/src/images/images.jfif)](https://www.macmillandictionary.com/dictionary/british/maple)
+[![logo](../images/images.jfif)](https://www.macmillandictionary.com/dictionary/british/maple)
 ````
 
 The rendered output:
 
-[![logo](/src/images/images.jfif)](https://www.macmillandictionary.com/dictionary/british/maple)
+[![logo](../images/images.jfif)](https://www.macmillandictionary.com/dictionary/british/maple)
 
 ## Escaping characters
 
