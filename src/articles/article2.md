@@ -1,7 +1,7 @@
 ## Welcome to Maple Publish
 
 ## A Quick guide to Markdown
-| Date        | Authors: John Doe    | <Contact@example.com>       |
+| Date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"        | Authors: John Doe    | <Contact@example.com>       |
 
 ___
 
@@ -161,13 +161,173 @@ If you need to start an unordered list item with a number followed by a period, 
 To add another element in a list while preserving the continuity of the list, indent the element four spaces or one tab.
 
 ````
+### Example list with multiple types of elements added
 * This is the first list item.
-* Here's the second list item.
+* This is how you add paragraph.
 
     I need to add another paragraph below the second list item.
 
-* And here's the third list item.
+* This is how you add blockquote.
+  
+    > A blockquote would look great below the second list item.
+
+* This is how you add code blocks. Code blocks are normally indented four spaces or one tab. When they’re in a list, indent them eight spaces or two tabs.
+
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
+
+* This is how you add images
+
+    ![logo](/src/images/images.jfif)
+
 ````
+
+The rendered output:
+
+### Example list with multiple types of elements added
+* This is the first list item.
+* This is how you add paragraph.
+
+    I need to add another paragraph below the second list item.
+
+* This is how you add blockquote.
+  
+    > A blockquote would look great below the second list item.
+
+* This is how you add code blocks. Code blocks are normally indented four spaces or one tab. When they’re in a list, indent them eight spaces or two tabs.
+
+        <html>
+          <head>
+            <title>Test</title>
+          </head>
+
+* This is how you add images
+
+    ![logo](/src/images/images.jfif)
+
+
+## Code
+
+To denote a word or phrase as code, enclose it in backticks (`).
+
+## Escaping Backtick
+
+If the word or phrase you want to denote as code includes one or more backticks, you can escape it by enclosing the word or phrase in double backticks (``).
+
+| Markdown | Rendered output |
+| ----------- | ----------- |
+| Code example: At the command prompt, type \`nano\`.  |  Code example: At the command prompt, type `nano`. |
+| Escaping backtick example: \`\`Use \`code\` in your Markdown file.\`\`.  |  Escaping backtick example: ``Use `code` in your Markdown file.``. |
+
+## Code Blocks
+
+To create code blocks, indent every line of the block by at least four spaces or one tab.
+
+````
+    <html>
+      <head>
+      </head>
+    </html>
+````
+
+The rendered output:
+
+    <html>
+      <head>
+      </head>
+    </html>
+
+## Horizontal Rules
+
+To create a horizontal rule, use three or more asterisks (***), dashes (---), or underscores (___) on a line by themselves.
+
+````
+***
+
+---
+
+_________________
+````
+
+The rendered output:
+
+***
+
+---
+
+_________________
+
+## Links
+
+To create a link, enclose the link text in brackets (e.g., [Duck Duck Go]) and then follow it immediately with the URL in parentheses (e.g., (`https://google.com`)).
+
+````
+My favorite search engine is [Google](https://google.com "The best search engine").
+````
+
+The rendered output:
+
+My favorite search engine is [Google](https://google.com "The best search engine").
+
+
+## URLs and emails
+
+To quickly turn a URL or email address into a link, enclose it in angle brackets.
+
+````
+<https://www.markdownguide.org>
+
+<fake@example.com>
+````
+
+The rendered output:
+
+<https://www.markdownguide.org>
+
+<fake@example.com>
+
+## Images
+
+To add an image, add an exclamation mark (!), followed by alt text in brackets, and the path or URL to the image asset in parentheses. You can optionally add a title after the URL in the parentheses.
+
+````
+![logo](/src/images/images.jfif)
+````
+
+The rendered output:
+
+![logo](/src/images/images.jfif)
+
+## Linking images
+
+To add a link to an image, enclose the Markdown for the image in brackets, and then add the link in parentheses.
+
+````
+[![logo](/src/images/images.jfif)](https://www.macmillandictionary.com/dictionary/british/maple)
+````
+
+The rendered output:
+
+[![logo](/src/images/images.jfif)](https://www.macmillandictionary.com/dictionary/british/maple)
+
+## Escaping characters
+
+Escaping Characters
+To display a literal character that would otherwise be used to format text in a Markdown document, add a backslash (\\) in front of the character.
+
+The characters you can escape includes \\, \`, \*, \_, \{\}, \[\], \<\>, \(\), \#, \+, \-, \., \!, \|.
+
+## HTML
+
+Many Markdown applications allow you to use HTML tags in Markdown-formatted text. This is helpful if you prefer certain HTML tags to Markdown syntax. For example, some people find it easier to use HTML tags for images. Using HTML is also helpful when you need to change the attributes of an element, like specifying the color of text or changing the width of an image.
+
+To use HTML, place the tags in the text of your Markdown-formatted file.
+
+## Further information regarding markdown syntax
+
+For more information about markdown syntax, you could visit [Markdown Guide](https://www.markdownguide.org/ "Markdown guide").
 
 [Home Page](../../index.md)
 <div style="text-align: right"><a href="../../index.md" >Next Chapter</a> </div>
