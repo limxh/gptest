@@ -144,10 +144,19 @@ To create an unordered list, add dashes (-), asterisks (*), or plus signs (+) in
 
 | Markdown | Rendered output |
 | ----------- | ----------- |
-| \- First <br> \- Second <br> \- Third <br> \- Fourth |  <html><ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul></html> |
+| \- First <br> \- Second <br> \- Third <br> \- Fourth |  <ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul> |
 | \* First <br> \* Second <br> \* Third <br> \* Fourth |  <ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul> |
 | \+ First <br> \+ Second <br> \+ Third <br> \+ Fourth |  <ul><li>First item</li><li>Second item</li><li>Third item</li><li>Fourth item</li></ul> |
 | \- First <br> \- Second <br> \- Third <br> &emsp; \- Indented item <br> &emsp; \- Indented item <br> \- Fourth |  <ul><li>First item</li><li>Second item</li><li>Third item<ul><li>Indented item</li><li>Indented item</li></ul></li><li>Fourth item</li></ul> |
+
+The rendered output:
+<ul>
+  <li>First item</li>
+  <li>Second item</li>
+  <li>Third item</li>
+  <li>Fourth item</li>
+</ul>
+
 
 ### Unordered List item with number
 If you need to start an unordered list item with a number followed by a period, you can use a backslash (\\) to escape the period.
@@ -324,6 +333,13 @@ The characters you can escape includes \\, \`, \*, \_, \{\}, \[\], \<\>, \(\), \
 Many Markdown applications allow you to use HTML tags in Markdown-formatted text. This is helpful if you prefer certain HTML tags to Markdown syntax. For example, some people find it easier to use HTML tags for images. Using HTML is also helpful when you need to change the attributes of an element, like specifying the color of text or changing the width of an image.
 
 To use HTML, place the tags in the text of your Markdown-formatted file.
+
+## Video
+
+<video width="320" height="240" controls>
+  <source src="../video/vid01.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
 
 ## Further information regarding markdown syntax
 
