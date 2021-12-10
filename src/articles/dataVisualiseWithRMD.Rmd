@@ -1,0 +1,42 @@
+---
+title: "Data Visualisation using Rmd"
+author: limxh
+date: 9/12/21
+output: html_document
+---
+
+```{r, echo = FALSE}
+A <- c(1, 1, 2, 3)
+B <- c(5, 10, 15, 20)
+dataframe <- data.frame(A, B)
+plot(dataframe)
+```
+```{r, echo = FALSE}
+data<-read.csv("../data/testData1.csv")
+
+print(data)
+
+data$ï..date<- as.Date(data$ï..date, "%m/%d/%Y")
+
+plot(x = data$date,cases_new = data$y,
+	xlab = "date",
+	ylab = "new cases",
+	xlim=c(0,9999999),
+	ylim=c(0,25000),
+	main = "Plot"
+)
+
+```
+
+```{r, echo = FALSE}
+data=read.csv("../data/covid19-public-main/epidemic/cases_malaysia.csv")
+
+print(data)
+
+plot(x = data$date,cases_new = data$y,
+	xlab = "x-axis",
+	ylab = "y-axis",
+	ylim=c(0,25000),
+	main = "Plot"
+)
+```
