@@ -18,3 +18,6 @@ encoding:
     field: cases_new
     type: quantitative
 ```
+
+[Home Page](../../index.md)
+<div style="text-align: right"><a href="../../index.md" >Next Chapter</a> </div>

@@ -7,6 +7,7 @@ This is an example website of our publishing platform. Here users can upload the
 
 1. [Article1](src/articles/article1.md)
 2. [Article2](src/articles/article2.md)
+3. [Data Visualisation using vis](src/articles/dataVisualiseTest.md)
 
 ___
 | [About Us](index.md)        | [Help Us Improve](index.md)    | <Contact@example.com>       |
