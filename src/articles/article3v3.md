@@ -2,8 +2,7 @@
 
 ## Article Title
 
-Date :“14 December, 2021” | Authors: John Doe | <Contact@example.com>
-|date: “2021-12-14”|
+Date :“14 December, 2021” | Authors: John Doe | <Contact@example.com>|
 
 ___
 

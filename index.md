@@ -9,7 +9,7 @@ This is an example website of our publishing platform. Here users can upload the
 2. [Article2](src/articles/article2.md)
 3. [Article3](src/articles/article3.html)
 4. [Article3v2](src/articles/article3.md)
-5. [Article3 with themes](src/articles/article4.md)
+5. [Article3 test with themes](src/articles/article3v3.md)
 6. [Data Visualisation using vis](src/articles/dataVisualiseTest.md)
 7. [Data Visualisation using Rmd](src/articles/dataVisualiseWithRmd.html)
 
