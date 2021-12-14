@@ -1,7 +1,7 @@
 ## Welcome to Maple Publish
 
 ## Article Title
-| Date        | Authors: John Doe    | <Contact@example.com>       |
+| Date :"`r format(Sys.time(), '%d %B, %Y')`"        | Authors: John Doe    | <Contact@example.com>       |
 
 ___
 
