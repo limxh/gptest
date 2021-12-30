@@ -1,5 +1,5 @@
 ## Data visualisation Page
 
-![](/src/images/Figure1.png)
+![](../images/Figure1.png)
 
-![](/src/images/Figure2.png)
+![](../images/Figure2.png)
