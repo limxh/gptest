@@ -11,7 +11,9 @@ This is an example website of our publishing platform. Here users can upload the
 4. [Article3v2](src/articles/article3.md)
 5. [Article3 test with themes](src/articles/article3v3.md)
 6. [Data Visualisation using vis](src/articles/dataVisualiseTest.md)
-7. [Data Visualisation using Rmd](src/articles/dataVisualiseWithRmd.html)
+7. [Data Visualisation using Rmd (with HTML)](src/articles/dataVisualiseWithRmd.html)
+8. [Data Visualisation using Rmd (with Md)](src/articles/dataVisualiseWithRmd.md)
+
 
 ___
 | [About Us](index.md)        | [Help Us Improve](index.md)    | <Contact@example.com>       |

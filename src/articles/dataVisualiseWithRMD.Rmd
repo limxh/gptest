@@ -2,41 +2,47 @@
 title: "Data Visualisation using Rmd"
 author: limxh
 date: 9/12/21
-output: html_document
+output: md_document
 ---
 
-```{r, echo = FALSE}
-A <- c(1, 1, 2, 3)
-B <- c(5, 10, 15, 20)
-dataframe <- data.frame(A, B)
-plot(dataframe)
-```
-```{r, echo = FALSE}
-data<-read.csv("../data/testData1.csv")
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
 
-print(data)
-
-data$ï..date<- as.Date(data$ï..date, "%m/%d/%Y")
-
-plot(x = data$date,cases_new = data$y,
-	xlab = "date",
-	ylab = "new cases",
-	xlim=c(0,9999999),
-	ylim=c(0,25000),
-	main = "Plot"
-)
-
+library(tidyverse)
 ```
 
-```{r, echo = FALSE}
-data=read.csv("../data/covid19-public-main/epidemic/cases_malaysia.csv")
+## Data visualisation Page
 
-print(data)
+```{r ggplot, echo=FALSE}
 
-plot(x = data$date,cases_new = data$y,
-	xlab = "x-axis",
-	ylab = "y-axis",
-	ylim=c(0,25000),
-	main = "Plot"
-)
+
+data<-read.csv("../data/covid19-public-main/epidemic/cases_malaysia.csv")
+
+##print(data)
+
+p<- ggplot(data = data,
+                    mapping = aes(x = date,
+                          y = cases_new))
+
+p + geom_point(alpha = 0.3) +
+    labs(x = "Date", y = "Daily New Cases",
+         title = "Malaysia Daily New cases",
+         caption = "Source: Covid19-public-main")
+
+```
+
+```{r, echo=FALSE}
+
+cases_state<-read.csv("../data/covid19-public-main/epidemic/cases_state.csv")
+
+p<- ggplot(data = cases_state,
+                    mapping = aes(x = date,
+                          y = cases_new))
+
+p + geom_point(alpha = 0.3, mapping = aes(color = state)) + 
+    facet_wrap(~ state) +
+    labs(x = "Date", y = "Daily New Cases",
+         title = "Malaysia Daily New cases",
+         caption = "Source: Covid19-public-main")
+
 ```
