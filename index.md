@@ -14,6 +14,7 @@ This is an example website of our publishing platform. Here users can upload the
 7. [Data Visualisation using Rmd (with HTML)](src/articles/dataVisualiseWithRmd.html)
 8. [Data Visualisation using Rmd (with Md)](src/articles/dataVisualiseWithRmd.md)
 9. [Data Visualisation using Rmd (with Md, along with themes)](src/articles/dataVisualiseWithRmd2.md)
+10. [Data Visualise](src/articles/dataVisualise.md)
 
 
 ___
