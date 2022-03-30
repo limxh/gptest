@@ -15,6 +15,7 @@ This is an example website of our publishing platform. Here users can upload the
 8. [Data Visualisation using Rmd (with Md)](src/articles/dataVisualiseWithRmd.md)
 9. [Data Visualisation using Rmd (with Md, along with themes)](src/articles/dataVisualiseWithRmd2.md)
 10. [Data Visualise](src/articles/dataVisualise.md)
+11. [More about GitHub Pages](src/articles/brainstorm.md)
 
 
 ___
