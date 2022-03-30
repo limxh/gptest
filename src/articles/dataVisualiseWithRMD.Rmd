@@ -28,7 +28,6 @@ p + geom_point(alpha = 0.3) +
     labs(x = "Date", y = "Daily New Cases",
          title = "Malaysia Daily New cases",
          caption = "Source: Covid19-public-main")
-ggsave(filename = "Figure1.png")
 
 ```
 
@@ -45,7 +44,5 @@ p + geom_point(alpha = 0.3, mapping = aes(color = state)) +
     labs(x = "Date", y = "Daily New Cases",
          title = "Malaysia Daily New cases",
          caption = "Source: Covid19-public-main")
-
-ggsave(filename = "Figure2.png")
 
 ```
